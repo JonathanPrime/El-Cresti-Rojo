@@ -14,9 +14,9 @@
 
 
 @font-face {
-  font-family: 'Blackmatte';
+  font-family: 'TheCountryBlues';
   /*a name to be used later*/
-  src: url('../fonts/Blackmatte.otf');
+  src: url('../fonts/Thecountryblues-Bold.otf');
   /*URL to font*/
 }
 
@@ -27,7 +27,7 @@
   --gray: #aaa;
   --animation-curve: cubic-bezier(0.05, 0.07, 0.052, 0.052);
   --palet-1: #CE0505;
-  --palet-2: #FFDA00; 
+  --palet-2: #FFDA00;
 }
 
 * {
@@ -50,6 +50,28 @@ html {
   scroll-padding-top: 8rem;
 }
 
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loader-container img{
+  height: 291px;
+  width: 441px;
+}
+
+.loader-container.fade-out {
+  top: -120%;
+}
+
 
 section {
   padding: 9rem 9% !important;
@@ -62,18 +84,18 @@ section {
 
 .heading .title-menu {
   text-align: center;
-  font-family: 'Blackmatte';
-  font-size: 8rem;
-  margin-top: -4rem;
-  color: var(--black);
+  font-family: 'TheCountryBlues';
+  font-size: 6rem;
+  margin-top: -2rem;
+  color: var(--white);
 }
 
 .heading .sub-menu {
   text-align: center;
   font-family: 'Bebas-Neue-Pro-Bold';
   text-transform: uppercase;
-  font-size: 5.8rem;
-  color: var(--palet-1);
+  font-size: 7.8rem;
+  color: var(--palet-2);
 }
 
 p {
@@ -275,7 +297,7 @@ img {
   line-height: 2;
   color: var(--white);
   padding: 2rem 0;
-  font-family: 'Blackmatte' !important;
+  font-family: 'TheCountryBlues' !important;
 }
 
 .service {
@@ -312,16 +334,16 @@ img {
 .service-box .box .title-services {
   padding: 1rem 0;
   font-size: 4rem;
+  margin-top: -4rem;
   color: var(--black);
   font-family: 'Bebas-Neue-Pro-Bold';
 }
 
 .service-box .box .sub-services {
   padding: 1rem 0;
-  margin-top: -4rem;
-  font-size: 5rem;
+  font-size: 3rem;
   color: var(--palet-1);
-  font-family: 'Blackmatte';
+  font-family: 'TheCountryBlues';
 }
 
 .service-box .box p {
@@ -333,10 +355,62 @@ img {
 /*========== MENU ==========*/
 /*========== MENU ==========*/
 
-.menu {
-  background: var(--white) url(../images/vectores/patron-1.svg) repeat;
-  background-size: contain;
+/*========== MENU ==========*/
+/*========== MENU ==========*/
+
+#menu {
+  background: var(--white) url(../images/backgrounds/background-menu-01.jpg) repeat;
+  background-size: cover;
   background-position: center;
+  padding: 2rem 9% !important;
+}
+
+#menu-1 {
+  background: var(--white) url(../images/backgrounds/background-menu-02.jpg) repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 9% !important;
+}
+
+#menu-2 {
+  background: var(--white) url(../images/backgrounds/background-menu-03.jpg) repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 9% !important;
+}
+
+#menu-3 {
+  background: var(--white) url(../images/backgrounds/background-menu-04.jpg) repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 9% !important;
+}
+
+#menu-5 {
+  background: var(--white) url(../images/backgrounds/background-menu-06.jpg) repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 9% !important;
+}
+
+#menu-7 {
+  background: var(--white) url(../images/backgrounds/background-menu-08.jpg) repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 9% !important;
+}
+
+#menu-8 {
+  background: var(--white) url(../images/backgrounds/background-menu-04.jpg) repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 2rem 9% !important;
+}
+
+#menu-9 {
+  background: var(--white) url(../images/backgrounds/background-menu-06.jpg) repeat;
+  background-size: cover;
+  background-position: right;
   padding: 2rem 9% !important;
 }
 
@@ -355,7 +429,7 @@ img {
   display: flex;
   opacity: 1 !important;
   flex-direction: column;
-  background: url(../images/vectores/back-footer.svg) no-repeat, linear-gradient(346deg, rgba(206, 5, 5, 1) 0%, rgba(255, 218, 0, 1) 100%) !important;
+  background: url(../images/vectores/back-footer.svg) no-repeat, linear-gradient(346deg, rgba(206, 5, 5, 1) 0%, rgba(205, 100, 0, 1) 100%) !important;
   background-size: cover !important;
   background-position-y: center !important;
   background-position-x: center !important;
@@ -577,9 +651,9 @@ img {
 }
 
 .own-script {
-  font-family: 'Blackmatte';
+  font-family: 'TheCountryBlues';
 
-  font-size: 8rem;
+  font-size: 6rem;
   color: var(--palet-1);
 }
 
@@ -648,29 +722,27 @@ img {
 .heading .reviews-title {
   font-family: 'Bebas-Neue-Pro-Bold';
   font-size: 6rem;
-  margin-top: -4.5rem;
-  padding-left: 6rem;
   color: var(--black);
 }
 
 .heading .script-review {
-  font-family: 'Blackmatte';
-  font-size: 10rem;
+  font-family: 'TheCountryBlues';
+  font-size: 6rem;
+  margin-top: -2rem;
   color: var(--palet-1);
 }
 
 .heading .contact-title {
   font-family: 'Bebas-Neue-Pro-Bold';
   font-size: 6rem;
-  margin-top: -3.5rem;
-  padding-left: 6rem;
+  margin-top: -4.5rem;
   color: var(--black);
 }
 
 .heading .script-contact {
-  font-family: 'Blackmatte';
-  font-size: 10rem;
-  margin-top: -4rem;
+  font-family: 'TheCountryBlues';
+  font-size: 6rem;
+  margin-top: -2rem;
   color: var(--palet-1);
 }
 
@@ -904,7 +976,7 @@ img {
 }
 
 .domicilio .dom-content .heading .script-domi {
-  font-family: 'Blackmatte';
+  font-family: 'TheCountryBlues';
   font-size: 10rem;
   margin-top: -5rem;
   color: var(--palet-1);
@@ -1453,11 +1525,15 @@ input.whats-input[type=text]:focus {
 
 @media (max-width: 768px) {
   .heading .script-contact {
-    font-size: 8rem;
+    font-size: 5rem;
+    margin-top: -1rem;
   }
+
   .heading .script-review {
-    font-size: 8rem;
+    font-size: 5rem;
+    margin-top: -1rem;
   }
+
   .domicilio .dom-content .dom_description {
     text-align: center;
   }
@@ -1476,10 +1552,6 @@ input.whats-input[type=text]:focus {
 
   .home .content h3 {
     font-size: 2.5rem;
-  }
-
-  .home {
-    background-position-x: -80rem;
   }
 
   .about {
@@ -1514,8 +1586,49 @@ input.whats-input[type=text]:focus {
     font-size: 6rem;
   }
 
+  #menu {
+    background-position: -10rem;
+  }
+
+  #menu-1 {
+    background-position: -5rem;
+  }
+
+  #menu-2 {
+    background-position: -5rem;
+  }
+
+  #menu-3 {
+    background-position: -5rem;
+  }
+
+  #menu-4 {
+    background-size: cover;
+    background-position: right;
+  }
+
+  #menu-5 {
+    background-position: right;
+  }
+
+  #menu-6 {
+    background-position: left;
+  }
+
+  #menu-7 {
+    background-position: -10rem;
+  }
+
+  #menu-8 {
+    background-position: left;
+  }
+
+  #menu-9 {
+    background-position: -30rem;
+  }
+
   .own-script {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   .service-box .box .title-services {
@@ -1523,7 +1636,7 @@ input.whats-input[type=text]:focus {
   }
 
   .service-box .box .sub-services {
-    font-size: 5.2rem;
+    font-size: 4.2rem;
   }
 
   .heading .blog-title {
@@ -1547,12 +1660,12 @@ input.whats-input[type=text]:focus {
   }
 
   .heading .title-menu {
-    font-size: 6rem;
-    margin-top: -2.5rem;
+    font-size: 4.8rem;
+    margin-top: -2rem;
   }
 
   .heading .sub-menu {
-    font-size: 3.8rem;
+    font-size: 7.8rem;
   }
 }
 
