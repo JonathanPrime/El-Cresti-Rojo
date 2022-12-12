@@ -429,7 +429,7 @@ img {
   display: flex;
   opacity: 1 !important;
   flex-direction: column;
-  background: url(../images/vectores/back-footer.svg) no-repeat, linear-gradient(346deg, rgba(206, 5, 5, 1) 0%, rgba(205, 100, 0, 1) 100%) !important;
+  background: url(../images/vectores/back-footer.svg) no-repeat, linear-gradient(346deg, rgba(206, 5, 5, 1) 0%, rgba(206, 22, 5, 1) 100%) !important;
   background-size: cover !important;
   background-position-y: center !important;
   background-position-x: center !important;
