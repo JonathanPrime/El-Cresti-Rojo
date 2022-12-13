@@ -1537,47 +1537,6 @@ input.whats-input[type=text]:focus {
     font-size: 6rem;
   }
 
-  #menu {
-    background-position: -10rem;
-  }
-
-  #menu-1 {
-    background-position: -5rem;
-  }
-
-  #menu-2 {
-    background-position: -5rem;
-  }
-
-  #menu-3 {
-    background-position: -5rem;
-  }
-
-  #menu-4 {
-    background-size: cover;
-    background-position: right;
-  }
-
-  #menu-5 {
-    background-position: right;
-  }
-
-  #menu-6 {
-    background-position: left;
-  }
-
-  #menu-7 {
-    background-position: -10rem;
-  }
-
-  #menu-8 {
-    background-position: left;
-  }
-
-  #menu-9 {
-    background-position: -30rem;
-  }
-
   .own-script {
     font-size: 5rem;
   }
