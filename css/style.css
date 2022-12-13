@@ -87,7 +87,7 @@ section {
   font-family: 'TheCountryBlues';
   font-size: 6rem;
   margin-top: -2rem;
-  color: var(--white);
+  color: var(--palet-1);
 }
 
 .heading .sub-menu {
@@ -95,7 +95,7 @@ section {
   font-family: 'Bebas-Neue-Pro-Bold';
   text-transform: uppercase;
   font-size: 7.8rem;
-  color: var(--palet-2);
+  color: var(--black);
 }
 
 p {
@@ -358,59 +358,10 @@ img {
 /*========== MENU ==========*/
 /*========== MENU ==========*/
 
-#menu {
-  background: var(--white) url(../images/backgrounds/background-menu-01.jpg) repeat;
-  background-size: cover;
+.menu {
+  background: var(--white) url(../images/vectores/back-menu.svg) repeat;
+  background-size: contain;
   background-position: center;
-  padding: 2rem 9% !important;
-}
-
-#menu-1 {
-  background: var(--white) url(../images/backgrounds/background-menu-02.jpg) repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 9% !important;
-}
-
-#menu-2 {
-  background: var(--white) url(../images/backgrounds/background-menu-03.jpg) repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 9% !important;
-}
-
-#menu-3 {
-  background: var(--white) url(../images/backgrounds/background-menu-04.jpg) repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 9% !important;
-}
-
-#menu-5 {
-  background: var(--white) url(../images/backgrounds/background-menu-06.jpg) repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 9% !important;
-}
-
-#menu-7 {
-  background: var(--white) url(../images/backgrounds/background-menu-08.jpg) repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 9% !important;
-}
-
-#menu-8 {
-  background: var(--white) url(../images/backgrounds/background-menu-04.jpg) repeat;
-  background-size: cover;
-  background-position: left;
-  padding: 2rem 9% !important;
-}
-
-#menu-9 {
-  background: var(--white) url(../images/backgrounds/background-menu-06.jpg) repeat;
-  background-size: cover;
-  background-position: right;
   padding: 2rem 9% !important;
 }
 
